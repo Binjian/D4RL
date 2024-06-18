@@ -45,7 +45,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     keywords=["Reinforcement Learning", "Datasets", "RL", "AI"],
-    python_requires=">=3.7, <3.11",
+    python_requires=">=3.7, <3.12",
     packages=find_packages(),
     include_package_data=True,
     package_data={
@@ -60,14 +60,14 @@ setup(
         ]
     },
     install_requires=[
-        "gym<0.24.0",
+        "gymnasium[mujoco,box2d,atari]",
         "numpy",
-        "mujoco_py",
+        "mujoco",
         "pybullet",
         "h5py",
         "termcolor",  # adept_envs dependency
         "click",  # adept_envs dependency
-        "dm_control>=1.0.3",
-        "mjrl @ git+https://github.com/aravindr93/mjrl@master#egg=mjrl",
+        "dm_control",
+        "mjrl @ git+https://github.com/binjian/mjrl",
     ],
 )

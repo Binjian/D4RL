@@ -3,8 +3,8 @@ import operator
 from functools import reduce
 
 import numpy as np
-import gym
-from gym import error, spaces, utils
+import gymnasium as gym
+from gymnasium import error, spaces, utils
 from d4rl.gym_minigrid.minigrid import OBJECT_TO_IDX, COLOR_TO_IDX, STATE_TO_IDX
 
 class ReseedWrapper(gym.core.Wrapper):
